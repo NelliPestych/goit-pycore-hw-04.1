@@ -12,7 +12,7 @@ def add_contact(args, contacts):
         return "Invalid command. Please provide both name and phone number."
 
     name, phone = args
-    contacts[name] = phone
+    contacts[name.lower()] = phone
     return "Contact added."
 
 
